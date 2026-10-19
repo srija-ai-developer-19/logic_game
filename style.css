@@ -1,0 +1,60 @@
+body{
+  background:#f3e5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+.title{
+  color:#4a148c;
+  font-weight:bold;
+}
+.score-box{
+  background:white;
+  padding:8px 15px;
+  border-radius:20px;
+  margin:5px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  color:#6a1b9a;
+  font-weight:bold;
+}
+.game-board{
+  display:grid;
+  grid-template-columns:repeat(4, 80px);
+  gap:10px;
+  width:fit-content;
+}
+.card-box{
+  width:80px;
+  height:80px;
+  background:white;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:35px;
+  cursor:pointer;
+  box-shadow:0 3px 8px rgba(0,0,0,0.15);
+  transition:0.3s;
+  border:3px solid transparent;
+}
+.card-box:hover{
+  transform:scale(1.05);
+}
+.card-box.open{
+  background:#e1bee7;
+  border-color:#6a1b9a;
+}
+.card-box.matched{
+  background:#c8e6c9;
+  border-color:green;
+  pointer-events:none;
+}
+.btn-purple{
+  background:#6a1b9a;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:25px;
+  font-weight:bold;
+}
+.btn-purple:hover{
+  background:#4a148c;
+}

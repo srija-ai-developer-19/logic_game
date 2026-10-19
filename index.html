@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Memory Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container text-center mt-4">
+  <h2 class="title">🍔 Food Memory Game 🍕</h2>
+  <p>Same food ni match chey!</p>
+  
+  <div class="d-flex justify-content-center gap-3 mb-3">
+    <span class="score-box">Moves: <b id="moves">0</b></span>
+    <span class="score-box">Matched: <b id="matched">0/8</b></span>
+  </div>
+
+  <div id="gameBoard" class="game-board mx-auto"></div>
+
+  <button class="btn-purple mt-4" onclick="startGame()">Restart Game 🔄</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
